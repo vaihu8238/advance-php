@@ -24,7 +24,6 @@ required jQuery code	        			      complete js code
 
 It is less time-consuming.				    -It is more time consuming as the 			             			             whole script is written.
 
-
 g) How We Can Select The Specified <li> Element From The ListOf <li>
 Elements In <ul>?
 ans:The <li> HTML element is used to represent an item in a list. It must be contained in a parent element: an ordered list (<ol>), an unordered list (<ul>), or a menu (<menu>).

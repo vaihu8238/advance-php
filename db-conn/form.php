@@ -1,43 +1,43 @@
 <?php
 
-$con = new mysqli("localhost","root","","assignment");
+// $con = new mysqli("localhost","root","","assignment");
 
-if(isset($_POST['sub']))
-{
-    $fname= $_POST['fn'];
-    $lname= $_POST['ln'];
-    $email= $_POST['em'];
-    $pass= $_POST['pwd'];
-    $cpass= $_POST['cpwd'];
-    $gen= $_POST['gender'];
+// if(isset($_POST['sub']))
+// {
+//     $fname= $_POST['fn'];
+//     $lname= $_POST['ln'];
+//     $email= $_POST['em'];
+//     $pass= $_POST['pwd'];
+//     $cpass= $_POST['cpwd'];
+//     $gen= $_POST['gender'];
    
-    $ch= $_POST['chk'];
-    $chk="";
-    foreach($ch as $v)
-    {
-        $chk =$chk.$v . ",";
-    }
+//     $ch= $_POST['chk'];
+//     $chk="";
+//     foreach($ch as $v)
+//     {
+//         $chk =$chk.$v . ",";
+//     }
     
     
-    // $img= $_POST['file'];
-    $file = $_FILES["file"]["name"];
-    $temp_file = $_FILES["file"]["tmp_name"];
-    $location = "image/".$file;
-    if(move_uploaded_file($temp_file,$location))
-    {
-        // echo"uplod";
-    }
+//     // $img= $_POST['file'];
+//     $file = $_FILES["file"]["name"];
+//     $temp_file = $_FILES["file"]["tmp_name"];
+//     $location = "image/".$file;
+//     if(move_uploaded_file($temp_file,$location))
+//     {
+//         // echo"uplod";
+//     }
 
 
  
-  $sql=  "insert into details(fname,lname,email,password,c_password,gender,hobbies,file) 
-  values('$fname','$lname','$email','$pass','$cpass','$gen','$chk','$file')";
+//   $sql=  "insert into details(fname,lname,email,password,c_password,gender,hobbies,file) 
+//   values('$fname','$lname','$email','$pass','$cpass','$gen','$chk','$file')";
   
-  $con->query($sql);
-}
+//   $con->query($sql);
+// }
 
 ?>
-
+<!-- 
 <html>
 <head>
      
@@ -83,11 +83,11 @@ if(isset($_POST['sub']))
 
     <?php
     
-    $fetch="select * from details";
-    $res = $con->query($fetch); 
+    // $fetch="select * from details";
+    // $res = $con->query($fetch); 
 
-    while($row = mysqli_fetch_array($res))
-    {
+    // while($row = mysqli_fetch_array($res))
+     {
 
 
     ?>
@@ -174,4 +174,4 @@ if(isset($_POST['sub']))
 </script>
 
 </body>
-</html>
+</html> -->

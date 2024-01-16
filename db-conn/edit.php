@@ -1,39 +1,39 @@
 <?php
-error_reporting(0);
+// error_reporting(0);
 
- $con = new mysqli("localhost","root","","assignment");
+//  $con = new mysqli("localhost","root","","assignment");
 
-     $id = $_GET['Eid'];
-    // $id =$_REQUEST['Eid'];
-    echo $uid;
+//      $id = $_GET['Eid'];
+//     // $id =$_REQUEST['Eid'];
+//     echo $uid;
 
-    $fname= $_REQUEST['fn'];
-    $lname= $_REQUEST['ln'];
-    $email= $_REQUEST['em'];
-    $pass= $_REQUEST['pwd'];
-    $cpass=$_REQUEST['cpwd'];
-    $gen= $_REQUEST['gender'];
-    $ch= $_REQUEST['chk'];
-    foreach($ch as $v)
-    {
-        $chk =$chk.$v . ",";
-    }
+//     $fname= $_REQUEST['fn'];
+//     $lname= $_REQUEST['ln'];
+//     $email= $_REQUEST['em'];
+//     $pass= $_REQUEST['pwd'];
+//     $cpass=$_REQUEST['cpwd'];
+//     $gen= $_REQUEST['gender'];
+//     $ch= $_REQUEST['chk'];
+//     foreach($ch as $v)
+//     {
+//         $chk =$chk.$v . ",";
+//     }
     
 
 
-    $up= "UPDATE details SET fname='$fname',lname='$lname',email='$email',password=' $pass',
-         c_password='$cpass',gender='$gen',hobbies='$chk' WHERE uid='$id'";
-    $edit=$con->query($up);
+//     $up= "UPDATE details SET fname='$fname',lname='$lname',email='$email',password=' $pass',
+//          c_password='$cpass',gender='$gen',hobbies='$chk' WHERE uid='$id'";
+//     $edit=$con->query($up);
 
     // if($edit)
     // {
-    //     header("location:db2con.php");
+    //     header("location:form.php");
     // }
 
 ?>
 
 
-<form method="post" enctype="multipart/form-data">
+<!-- <form method="post" enctype="multipart/form-data">
         FRIST NAME:<input name="fn" id="fnm"/><br><br>
         LASTNAME:<input name="ln" id="lnm"/><br><br>
         EMAIL:<input name="em" id="em"/><br><br>
@@ -49,6 +49,6 @@ error_reporting(0);
 
         SELECT FILE:<input type="file" name="file" id="file"/><br><br>
 
-        <input type="submit" name="sub" value="submit" onclick=" return validateform() ">    
-</form>
+        <input type="submit" name="sub" value="submit">    
+</form> -->
 
