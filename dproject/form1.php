@@ -118,7 +118,7 @@ if(isset($_POST['sub']))
 <br><br><br>
   <div class="col-12">
     <button type="submit" name="sub" class="btn btn-primary" value="submit">submit</button>
-    <!-- <a href="index.php" class="btn btn-primary float-end">back</a> -->
+    <!--  <a href="index.php" class="btn btn-primary float-end">back</a> -->
   </div><br>
   
   
